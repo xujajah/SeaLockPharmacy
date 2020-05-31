@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootCustomerReg" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerRegistrationController">
+   <top>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="barColor" alignment="CENTER" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" text="Customer Registration" wrapText="true" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton fx:id="btnCross" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnCrossAction" prefHeight="20.0" prefWidth="40.0" styleClass="closeButton" StackPane.alignment="TOP_RIGHT">
+               <graphic>
+                  <ImageView fitHeight="10.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/media/cross.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </StackPane>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnSave" alignment="CENTER" defaultButton="true" onAction="#btnSaveAction" prefHeight="25.0" prefWidth="71.0" styleClass="nonRound" text="Save" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnCancel" alignment="CENTER" cancelButton="true" onAction="#btnCancelAction" prefHeight="25.0" prefWidth="71.0" styleClass="nonRound" text="Cancel" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font></JFXButton>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="25.0" prefWidth="70.0" text="Name">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="-10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txtName" alignment="BOTTOM_LEFT" prefWidth="250.0">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font></JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.rowIndex="1">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="25.0" prefWidth="70.0" text="Identity">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="-10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXComboBox fx:id="cmbIdentity" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="25.0" prefWidth="70.0" text="Address">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="-10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txtAddress" alignment="BOTTOM_LEFT" prefWidth="250.0">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font></JFXTextField>
+               </children>
+            </HBox>
+            <StackPane GridPane.rowIndex="3">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="25.0" prefWidth="70.0" text="Province">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="-10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXComboBox fx:id="cmbProvince" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="btnAddProvince" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnAddProvinceAction" styleClass="nonRound" StackPane.alignment="CENTER_RIGHT">
+                     <StackPane.margin>
+                        <Insets right="80.0" />
+                     </StackPane.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/plus-symbol.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </StackPane>
+            <StackPane GridPane.rowIndex="4">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="25.0" prefWidth="70.0" text="Region">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="-10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXComboBox fx:id="cmbRegion" prefWidth="250.0" />
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="btnAddRegion" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnAddRegionAction" styleClass="nonRound" StackPane.alignment="CENTER_RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/plus-symbol.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <StackPane.margin>
+                        <Insets right="80.0" />
+                     </StackPane.margin>
+                  </JFXButton>
+               </children>
+            </StackPane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.rowIndex="5">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="25.0" prefWidth="70.0" text="Email">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="-10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txtEmail" alignment="BOTTOM_LEFT" prefWidth="250.0">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font></JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.rowIndex="6">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="25.0" prefWidth="70.0" text="Phone">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="-10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txtPhone" alignment="BOTTOM_LEFT" prefWidth="250.0">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font></JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0" spacing="15.0" GridPane.rowIndex="7">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="25.0" prefWidth="70.0" text="DOB">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="-10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXDatePicker fx:id="dateDOB" prefWidth="250.0" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

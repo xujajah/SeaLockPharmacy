@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootPrinterSelect" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrinterSelectController">
+   <top>
+      <StackPane>
+         <children>
+            <HBox fx:id="barColor" alignment="CENTER" prefHeight="60.0" prefWidth="450.0">
+               <children>
+                  <Label alignment="CENTER" text="Select Default Printer" wrapText="true" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton fx:id="btnCross" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnCrossAction" prefHeight="20.0" prefWidth="40.0" styleClass="closeButton" StackPane.alignment="TOP_RIGHT">
+               <graphic>
+                  <ImageView fitHeight="10.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/media/cross.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </StackPane>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnSave" defaultButton="true" onAction="#btnSaveAction" text="Save" />
+            <JFXButton fx:id="btnCancel" cancelButton="true" onAction="#btnCancelAction" text="Cancel" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox spacing="10.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox spacing="20.0">
+               <children>
+                  <Label text="Default Printer" />
+                  <Label fx:id="lblDefault" text="Label">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Label text="Printers">
+                     <HBox.margin>
+                        <Insets top="12.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXComboBox fx:id="cmbPrinters" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

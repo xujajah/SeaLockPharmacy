@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootPurchaiseItem" prefHeight="600.0"
+	prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.SaleController">
+	<top>
+		<HBox fx:id="barColor" alignment="CENTER" prefHeight="60.0"
+			prefWidth="200.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label alignment="CENTER" text="Sales" HBox.hgrow="ALWAYS">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Label>
+			</children>
+		</HBox>
+	</top>
+	<center>
+		<TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0"
+			tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+			<tabs>
+
+				<Tab text="Sales">
+					<content>
+						<fx:include fx:id="tabSale" source="/views/TabSale.fxml" />
+					</content>
+				</Tab>
+
+				<Tab text="Returns">
+					<content>
+						<fx:include fx:id="TabReturn" source="/views/TabReturns.fxml" />
+					</content>
+
+				</Tab>
+			</tabs>
+		</TabPane>
+	</center>
+</BorderPane>

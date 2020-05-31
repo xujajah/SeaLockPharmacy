@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainBorder" prefHeight="250.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegionController">
+   <top>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label text="Add Region" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton fx:id="btnCross" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#btnCrossAction" prefHeight="20.0" prefWidth="40.0" styleClass="closeButton" StackPane.alignment="TOP_RIGHT">
+               <graphic>
+                  <ImageView fitHeight="10.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/media/cross.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </StackPane>
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints maxWidth="100.0" minWidth="20.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="270.0" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Province Name" wrapText="true" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="-5.0" />
+               </GridPane.margin></Label>
+            <JFXTextField fx:id="txtRegion" prefWidth="270.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="1.0" />
+               </GridPane.margin></JFXTextField>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" defaultButton="true" onAction="#btnRegionSaveAction" styleClass="nonRound" text="Save">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin></JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" cancelButton="true" onAction="#btnRegionCancelAction" styleClass="nonRound" text="Cancel">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin></JFXButton>
+               </children>
+            </HBox>
+            <Label text="Region Name" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="-4.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXTextField fx:id="txtProvince" editable="false" layoutX="110.0" layoutY="105.0" prefWidth="270.0" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Tab?>
+
+<BorderPane fx:id="rootInventoy" xmlns="http://javafx.com/javafx/8.0.111"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InventoryController">
+	<top>
+		<HBox fx:id="barColor" alignment="CENTER" prefHeight="60.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label text="Inventory" HBox.hgrow="ALWAYS">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Label>
+			</children>
+		</HBox>
+	</top>
+	<center>
+		<TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE"
+			BorderPane.alignment="CENTER">
+			<tabs>
+				<Tab closable="false" text="Drug">
+				<content>
+				<fx:include fx:id="drugView" source = "/views/DrugView.fxml" />
+				</content>
+				</Tab>
+				
+				<Tab closable="false" text="Stock">
+				<content>
+				<fx:include fx:id="stock" source = "/views/Stock.fxml" />
+				</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+
+	</center>
+</BorderPane>

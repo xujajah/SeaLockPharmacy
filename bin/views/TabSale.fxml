@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TabSaleController">
+   <top>
+      <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="60.0" prefWidth="45.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="60.0" prefWidth="45.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" minWidth="10.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="170.0" minWidth="60.0" prefWidth="45.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="100.0" prefWidth="70.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="txtPatientName" promptText="Enter Customer Name" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtDoctorName" promptText="Enter Doctor Name" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></JFXTextField>
+            <JFXComboBox fx:id="cmbViewPrescription" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="199.0" promptText="View Prescription" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM" />
+            <HBox alignment="CENTER" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <children>
+                  <Label minWidth="30.0" prefHeight="25.0" prefWidth="30.0" text="Days">
+                     <HBox.margin>
+                        <Insets bottom="-10.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <JFXTextField fx:id="txtDosageDays" prefWidth="50.0">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="txtSearchMed" promptText="Search Medicine" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </JFXTextField>
+            <HBox alignment="BOTTOM_LEFT" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <children>
+      
+                  <JFXTextField fx:id="txtQuantity" minWidth="50.0" prefWidth="50.0">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnAddPatientAction" prefHeight="40.0" prefWidth="40.0" ripplerFill="BLACK" styleClass="Round" text="  " GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM">
+            	 <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                       <image>
+                          <Image url="/media/loupe.png" />
+                       </image>
+                     </ImageView>
+                 </graphic>
+               <GridPane.margin>
+                  <Insets bottom="-10.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnAddDoctorAction" prefHeight="40.0" prefWidth="40.0" ripplerFill="BLACK" styleClass="Round" text=" " GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM">
+                 <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                       <image>
+                          <Image url="/media/loupe.png" />
+                       </image>
+                     </ImageView>
+                 </graphic>
+               <GridPane.margin>
+                  <Insets bottom="-10.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnSearchAction" prefHeight="40.0" prefWidth="40.0" ripplerFill="BLACK" styleClass="Round" text=" " GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+              	    <image>
+                  		<Image url="/media/loupe.png" />
+               		</image>
+            	</ImageView>
+            </graphic>
+               <GridPane.margin>
+                  <Insets bottom="-10.0" />
+               </GridPane.margin>
+
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnPrescriptionAction" prefHeight="40.0" prefWidth="40.0" ripplerFill="BLACK" styleClass="Round" text=" " GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/media/addCus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets bottom="-10.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <HBox alignment="BOTTOM_LEFT" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="-5.0" />
+               </GridPane.margin>
+               <children>
+                  <Label text="Stock" wrapText="true">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblStock" text="..." HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label text="Quantity" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="20.0" right="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </top>
+   <center>
+      <TableView fx:id="tblSales" focusTraversable="false" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="colSalesNo" maxWidth="2000.0" prefWidth="40.0" text="S.No" />
+            <TableColumn fx:id="colSalesMedId" maxWidth="3500.0" text="Med. Id" />
+            <TableColumn fx:id="colSalesMedicineName" prefWidth="207.0" text="Medicine Name" />
+            <TableColumn fx:id="colSalesQty" maxWidth="3500.0" prefWidth="75.0" text="Qty" />
+            <TableColumn fx:id="colSalesPrice" maxWidth="3500.0" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="colSalesTotal" maxWidth="3500.0" prefWidth="75.0" text="Total" />
+            <TableColumn fx:id="colSalesAction" maxWidth="4000.0" prefWidth="90.0" text="Action" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="10.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <right>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="95.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="105.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Total Items" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label text="Amount Due" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label text="Discount" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="-4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Payable" textFill="RED" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label text="Cash Received" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="-4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Balance" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="lblTotalItems" text="0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="lblAmountDue" text="0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <JFXTextField fx:id="txtDiscount" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" />
+                     </GridPane.margin></JFXTextField>
+                  <Label fx:id="lblPayable" text="0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <JFXTextField fx:id="txtReceive" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" />
+                     </GridPane.margin></JFXTextField>
+                  <Label fx:id="lblBalance" text="0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" onAction="#btnPrintAction" prefWidth="52.0" ripplerFill="BLACK" styleClass="nonRound" text="Print">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" onAction="#btnSaveAction" prefWidth="52.0" ripplerFill="BLACK" styleClass="nonRound" text="Save">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" onAction="#btnCancelAction" ripplerFill="BLACK" styleClass="nonRound" text="Cancel" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+</BorderPane>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PurchaseController">
+   <top>
+      <HBox fx:id="barColor" alignment="CENTER" prefHeight="60.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Purchase Items" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane BorderPane.alignment="CENTER">
+         <top>
+            <GridPane hgap="20.0" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="144.0" minWidth="119.0" prefWidth="119.0" />
+                  <ColumnConstraints maxWidth="281.0" minWidth="208.0" prefWidth="239.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="192.0" minWidth="119.0" prefWidth="162.0" />
+                  <ColumnConstraints maxWidth="245.0" minWidth="185.0" prefWidth="207.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="150.0" text="Supplier" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="150.0" text="Product Name" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="150.0" text="Trade Price Per Pack" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="150.0" text="Batch No." GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="150.0" text="Purchase Date" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="150.0" text="Quantity Per Unit" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="150.0" text="Retail Price per Pack" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="150.0" text="Expiry Date" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="BOTTOM">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="-2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <opaqueInsets>
+                              <Insets left="20.0" />
+                           </opaqueInsets>
+                        </HBox>
+                     </children></HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="250.0" GridPane.columnIndex="1">
+                     <children>
+                        <JFXTextField fx:id="txtSupplier" minHeight="25.0" minWidth="50.0" prefHeight="25.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font></JFXTextField>
+                        <JFXButton fx:id="btnSearchSupplier" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnSearchSupplierAction" prefHeight="30.0" prefWidth="30.0" styleClass="Round" HBox.hgrow="ALWAYS">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/loupe.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <JFXDatePicker fx:id="DatePurchase" defaultColor="#64b5f6" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="50.0" prefHeight="25.0" prefWidth="260.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+                  <JFXTextField fx:id="txtSupplierBillNo" minHeight="25.0" minWidth="50.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font></JFXTextField>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <JFXTextField fx:id="txtProductName" minHeight="25.0" minWidth="50.0" prefHeight="25.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font></JFXTextField>
+                        <JFXButton fx:id="btnSearchProduct" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnSearchProductAction" prefHeight="30.0" prefWidth="30.0" styleClass="Round" HBox.hgrow="ALWAYS">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/loupe.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <JFXTextField fx:id="txtQuantityPerUnit" minHeight="25.0" minWidth="50.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtTradePrice" minHeight="25.0" minWidth="50.0" prefHeight="25.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="txtRetailPrice" minHeight="25.0" minWidth="50.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtBatchNo" minHeight="25.0" minWidth="50.0" prefHeight="25.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font></JFXTextField>
+                  <Label alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="150.0" text="Supplier Bill #" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="-2.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker fx:id="dateExpiry" defaultColor="#64b5f6" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="50.0" prefHeight="25.0" prefWidth="260.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <JFXButton fx:id="btnAdd" buttonType="RAISED" onAction="#btnAddAction" prefHeight="25.0" prefWidth="70.0" styleClass="nonRound" text="Add" wrapText="true" HBox.hgrow="ALWAYS" />
+                        <JFXButton fx:id="btnClear" buttonType="RAISED" onAction="#btnClearAction" prefHeight="25.0" prefWidth="70.0" styleClass="nonRound" text="Clear" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets right="20.0" />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="50.0" right="50.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </top>
+         <center>
+            <TableView fx:id="tblPurchaseItem" focusTraversable="false" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="colSno" maxWidth="85.0" minWidth="20.0" text="S.No" />
+                  <TableColumn fx:id="colProductName" maxWidth="400.0" minWidth="50.0" prefWidth="150.0" text="Product Name" />
+                  <TableColumn fx:id="colQuantity" maxWidth="200.0" text="Quantity" />
+                  <TableColumn fx:id="colTradePrice" maxWidth="180.0" minWidth="20.0" prefWidth="100.0" text="Trade Price" />
+                  <TableColumn fx:id="colRetailPrice" maxWidth="150.0" prefWidth="100.0" text="Retail Price" />
+                  <TableColumn fx:id="colBatchNo" maxWidth="200.0" prefWidth="100.0" text="Batch No." />
+                  <TableColumn fx:id="colExpiry" maxWidth="200.0" text="Expiry" />
+                  <TableColumn fx:id="colAction" maxWidth="200.0" prefWidth="50.0" text="Action" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <BorderPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </BorderPane.margin>
+            </TableView>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnAddsupply" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#btnAddsupplyAction" styleClass="nonRound" text="Add Supply">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCancelsupply" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#btnCancelsupplyAction" styleClass="nonRound" text="Cancel">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </center>
+</BorderPane>

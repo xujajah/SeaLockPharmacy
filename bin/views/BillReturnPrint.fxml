@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BillReturnPrintController">
+   <top>
+      <VBox fx:id="topVbox" alignment="CENTER" spacing="2.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblTitle" text="Sealock Pharmacy" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAddress1" text="G.T Road Gujranwala">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAddress2" text="Gujranwala Pakistan">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPhone" text="PH : 05531234587">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="Sale Return">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <VBox style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 5;">
+               <children>
+                  <Label fx:id="lblCustomer" text="Customer Name :">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDoctor" text="Ref By:">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDate" text="Date: ">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBillNo" text="Bill No.">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCashier" text="Cashier:">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" />
+         </padding>
+      </VBox>
+   </top>
+   <bottom>
+      <VBox alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+         </padding>
+         <children>
+            <VBox alignment="TOP_RIGHT" fillWidth="false">
+               <children>
+                  <HBox alignment="TOP_CENTER" spacing="5.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 5;">
+                     <children>
+                        <VBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label text="Total ReceivedAmount :">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Discount Given:">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Received Amount :">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Total Return Amount :">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Discount Adjusted :">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label text="CashBack :">
+                                 <font>
+                                    <Font name="System Bold" size="9.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label fx:id="lblTotalAmount" text="100000.00">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblDiscountGiven" text="0.00">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblReceivedAmount" text="1000.00">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblTotalReturnAmount" text="1000.00">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblDiscountAdjusted" text="1000.00">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblCashBack" text="0.00">
+                                 <font>
+                                    <Font name="System Bold" size="9.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label fx:id="lblGreeting" text="Thank You For Your Kind Visit">
+               <font>
+                  <Font name="System Bold" size="8.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDeveloper" text="Developed By Eagale Solutions">
+               <font>
+                  <Font name="System Bold" size="7.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <HBox spacing="1.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vboxProductName" prefWidth="100.0">
+               <children>
+                  <Label alignment="TOP_CENTER" text="Product Name">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="vboxRetail" alignment="TOP_RIGHT" prefWidth="35.0">
+               <children>
+                  <Label alignment="TOP_CENTER" text="Price">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="vboxQty" alignment="TOP_RIGHT" prefWidth="25.0">
+               <children>
+                  <Label alignment="TOP_CENTER" text="Qty">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="vboxTotal" alignment="TOP_RIGHT" prefWidth="40.0">
+               <children>
+                  <Label alignment="TOP_CENTER" text="Total">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children></HBox>
+   </center>
+</BorderPane>

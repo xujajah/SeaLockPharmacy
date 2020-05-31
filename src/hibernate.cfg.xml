@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        
+        <!-- TODO-->
+        <property name="connection.url">jdbc:mysql://localhost:3306/SealockPharmacy?createDatabaseIfNotExist=true</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>
+       
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">
+            org.hibernate.dialect.MySQL5Dialect
+        </property>
+
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+          
+        <mapping class="model.Employee"/>
+        <mapping class="model.Customer"/>
+        <mapping class="model.Supplier"/>
+        <mapping class="model.Doctor"/>
+        <mapping class="model.Drug"/>
+        <mapping class="model.UPC"/>
+        <mapping class="model.Stock"/>
+        <mapping class="model.Purchase"/>
+        <mapping class="model.PurchaseDetail"/>
+        <mapping class="model.PrescriptionDetail"/>
+        <mapping class="model.Prescription"/>
+        <mapping class="model.Sale"/>
+        <mapping class="model.SaleDetail"/>
+        <mapping class="model.SaleReturn"/>
+        <mapping class="model.SaleReturnDetail"/>
+        <mapping class="model.Theme"/>
+        <mapping class="model.Province"/>
+        <mapping class="model.Region"/>
+        <mapping class="model.LoginHistory"/>
+        <mapping class="model.Company"/>
+        <mapping class="model.PosPrinter"/>
+        
+        
+        
+        
+
+    </session-factory>
+
+</hibernate-configuration>

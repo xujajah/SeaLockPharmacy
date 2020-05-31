@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainBorder" prefHeight="400.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomersController">
+   <top>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="barColor" alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+               <children>
+                  <Label text="Customers">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#btnCrossAction" prefHeight="20.0" prefWidth="40.0" styleClass="closeButton" StackPane.alignment="TOP_RIGHT">
+               <graphic>
+                  <ImageView fitHeight="10.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/media/cross.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </StackPane>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="50.0">
+               <left>
+                  <JFXTextField fx:id="txtSearch" minWidth="250.0" prefWidth="250.0" promptText="Search" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <JFXButton fx:id="btnAdd" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#btnAddAction" prefHeight="30.0" prefWidth="30.0" ripplerFill="#645bf6" style="-fx-background-radius: 100;" styleClass="Round" text=" " BorderPane.alignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" preserveRatio="true">
+                           <image>
+                              <Image url="/media/plus-symbol.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </right>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+               </VBox.margin>
+            </BorderPane>
+            <TableView fx:id="tblCustomer" prefHeight="262.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="colName" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Name" />
+                  <TableColumn fx:id="colIdentity" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Identity" />
+                  <TableColumn fx:id="colPhone" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Phone" />
+                  <TableColumn fx:id="colAddress" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Address" />
+                  <TableColumn fx:id="colAction" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" text="Action" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

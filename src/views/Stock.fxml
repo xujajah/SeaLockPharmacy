@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane fx:id="rootStock" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StockController">
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tblStock" focusTraversable="false">
+              <columns>
+                  <TableColumn fx:id="colSerial" maxWidth="500.0" minWidth="40.0" prefWidth="40.0" text="S. No" />
+                  <TableColumn fx:id="colUpc" maxWidth="1500.0" minWidth="110.0" prefWidth="110.0" text="UPC" />
+                <TableColumn fx:id="colComName" maxWidth="2500.0" minWidth="150.0" prefWidth="150.0" text="Com. Name" />
+                  <TableColumn fx:id="colMedName" maxWidth="2500.0" minWidth="150.0" prefWidth="150.0" text="Med. Name" />
+                  <TableColumn fx:id="colQtyPerPack" maxWidth="1000.0" minWidth="70.0" prefWidth="70.0" text="QtyPerPack" />
+                  <TableColumn fx:id="colStockInUnit" maxWidth="1000.0" minWidth="80.0" text="Stock in Unit" />
+                  <TableColumn fx:id="colTradePrice" maxWidth="1000.0" minWidth="70.0" prefWidth="70.0" text="TradePrice" />
+                  <TableColumn fx:id="colRetailPrice" maxWidth="1000.0" minWidth="70.0" prefWidth="70.0" text="RetailPrice" />
+                  <TableColumn fx:id="colUnitPrice" maxWidth="1000.0" minWidth="70.0" prefWidth="70.0" text="UnitPrice" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtSearch" alignment="CENTER" maxWidth="250.0" prefHeight="25.0" prefWidth="250.0" promptText="Search">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="40.0" top="30.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

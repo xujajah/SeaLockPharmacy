@@ -1,0 +1,225 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+#barColor{
+	
+	 -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #3A6486 0%, #3A6486 100%),
+        #64b5f6,
+        #64b5f6,
+        radial-gradient(center 50% 50%, radius 100%, #64b5f6, #64b5f6);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+	}
+
+
+.verticleButtons{
+
+	-fx-background-color: 
+        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(#64b5f6 0%, #64b5f6 20%, #64b5f6 100%),
+        linear-gradient(#ffffff 0%, #ffffff 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.root{
+    -fx-font-family: "Calibri";
+    -fx-font-size: 14;
+    -fx-background-color: white;
+    -fx-border-width: 5;
+}
+#rootCustomerReg{
+	-fx-background-color: white;
+    -fx-border-width: 5;
+    -fx-border-radius: 10;
+	-fx-border-color: #64b5f6;
+}
+
+#mainBorder,#rootCustomerReg,#rootCustomerUpdate,#rootDoctorUpdate,#rootDoctorReg,#rootDrugUpdate,#rootDrugReg{
+    -fx-background-color: white;
+    -fx-border-width: 5;
+	-fx-border-color: #64b5f6;	
+	
+}
+
+#rootEmployeeUpdate,#BPSaleSearch,#rootEmployeeReg,#rootPrescriptionUpdate,#rootPrescriptionReg,#rootSupplierUpdate,#rootSupplierReg{
+	-fx-background-color: white;
+    -fx-border-width: 5;
+	-fx-border-color: #64b5f6;	
+	
+}
+
+
+.jfx-tab-pane .headers-region
+{
+-fx-background-color: #64b5f6;
+}
+.jfx-tab-pane .tab-header-background
+{
+-fx-background-color: #64b5f6;
+}
+.jfx-tab-pane .tab-selected-line {
+	 -fx-stroke: #ffffff;
+ }
+ 
+#btnCross:hover{
+	-fx-background-color: #F5B0A1;
+	-fx-background-radius: 5;
+}
+
+#btnSquare:hover{
+	-fx-background-color: #b6d8f1;
+	-fx-background-radius: 5;
+}
+
+.closeButton{
+		-fx-background-color: #F5B0A1;
+}
+
+#btnMinus:hover{
+	-fx-background-color: #b6d8f1;
+	-fx-background-radius: 5;
+}
+
+.verticleButtons:hover{
+			-fx-background-color:  white;
+	-fx-background-radius: 30;
+	
+}
+
+.nonRound{
+		  -fx-background-color: 
+        linear-gradient(#64b5f6, #64b5f9),
+        linear-gradient(#ffffff 0%, #ffffff 20%, #64b5f6 100%),
+        linear-gradient(#ffffff 0%, #ffffff 50%);
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.nonRound:hover{
+	-fx-background-color: 
+        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(#64b5f6 0%, #64b5f6 20%, #64b5f6 100%),
+        linear-gradient(#ffffff 0%, #ffffff 50%);
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );	
+}
+
+
+.Round{
+	 -fx-background-color: #64b5f6;
+	-fx-background-radius: 100;
+}
+
+.Round:hover{
+	-fx-background-color: #ffffff;
+}
+
+
+.table-cell {
+    -fx-alignment: CENTER-LEFT;	
+}
+#colSerial, #colID, #colDRSNo, #colOHorderid, #colPMproductId,#colPOPid {
+    -fx-alignment: CENTER;
+}
+
+#colQty, #colTotalAmount, #Total, #colPrice, #colTotalPrice{
+	-fx-alignment: CENTER-RIGHT
+}
+
+.nonRound{}
+
+
+
+btnSales{
+	-fx-background-color: #64b5f6;
+	-fx-background-fills: grey;
+}
+
+.scroll-bar:horizontal{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:horizontal .thumb{
+    -fx-background-color: #64b5f6;
+    -fx-background-radius: 5em;
+}
+
+.scroll-bar:vertical .track{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .thumb{
+    -fx-background-color: #64b5f6;
+    -fx-background-radius: 5em;
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: #64b5f6;
+}
+
+
+
+.tab{
+    -fx-border-radius: 10 10 0 0;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+
+
+.tab:selected .focus-indicator {
+    -fx-border-radius: 11 11 0 0, 10 10 0 0;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #64b5f6;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+
+
+
+

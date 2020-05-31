@@ -1,0 +1,171 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+#barColor{
+	
+	 -fx-background-color: 
+	 	 linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+	-fx-background-radius: 10;
+}
+.verticleButtons{
+	-fx-background-color: white;
+	-fx-background-radius: 5;
+	
+}
+
+.root{
+    -fx-font-family: "Calibri";
+    -fx-font-size: 14;
+    -fx-background-color: white;
+    -fx-border-color: #84fab0;
+    -fx-border-width: 5;
+
+}
+.jfx-tab-pane .headers-region
+{
+-fx-background-color: #84fab0;
+}
+.jfx-tab-pane .tab-header-background
+{
+-fx-background-color: #84fab0;
+}
+.jfx-tab-pane .tab-selected-line {
+	 -fx-stroke: #ffffff;
+ }
+ 
+#btnCross:hover{
+	-fx-background-color: #F5B0A1;
+	-fx-background-radius: 5;
+}
+
+#btnSquare:hover{
+	-fx-background-color: #b6d8f1;
+	-fx-background-radius: 5;
+}
+
+#btnMinus:hover{
+	-fx-background-color: #b6d8f1;
+	-fx-background-radius: 5;
+}
+
+.verticleButtons:hover{
+    -fx-background-color: #DCDCDC;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 10;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;	
+}
+
+.nonRound{
+		  -fx-background-color: 
+        linear-gradient(#84fab0, #64b5f9),
+        linear-gradient(#fcfcfc 0%, #ffffff 20%, #84fab0 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.nonRound:hover{
+	-fx-background-color: #DCDCDC;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 10;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;	
+}
+
+
+.Round{
+	-fx-background-color: #84fab0;
+	-fx-background-radius: 50;
+}
+
+.Round:hover{
+	-fx-background-color: #ffffff;
+}
+
+
+.table-cell {
+    -fx-alignment: CENTER-LEFT;	
+}
+#colSerial, #colID, #colDRSNo, #colOHorderid, #colPMproductId,#colPOPid {
+    -fx-alignment: CENTER;
+}
+
+#colQty, #colTotalAmount, #Total, #colPrice, #colTotalPrice{
+	-fx-alignment: CENTER-RIGHT
+}
+
+.nonRound{}
+
+
+
+btnSales{
+	-fx-background-color: #84fab0;
+	-fx-background-fills: grey;
+}
+
+.scroll-bar:horizontal{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb{
+    -fx-background-color: white;
+    -fx-background-radius: 5em;
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: #84fab0;
+}
+
+
+
+.tab{
+    -fx-border-radius: 10 10 0 0;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+
+
+.tab:selected .focus-indicator {
+    -fx-border-radius: 11 11 0 0, 10 10 0 0;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #84fab0;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #FFFFFF;
+}

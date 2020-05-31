@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="mainBorder" prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
+   <effect>
+      <DropShadow />
+   </effect>
+   <left>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnDashboard" alignment="TOP_CENTER" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="Dashboard   " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                           <image>
+                              <Image url="/media/Dashboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnSales" alignment="TOP_CENTER" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="POS              " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/Sale.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnCustomer" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="Customer    " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/Customer.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnDoctor" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="Doctor        " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/doctor.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnEmployee" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="Employee    " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/Employee.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnSupplier" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="Supplier      " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/Supplier.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnPurchase" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="Purchase     " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/Purchase.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                     
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnInventory" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="Inventory    " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/inventory.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnReport" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="Report        " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnPrescription" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="Prescription" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/Prescription.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                     
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="btnOthers" buttonType="RAISED" focusTraversable="false" maxHeight="500.0" minHeight="48.0" onAction="#handleSelection" prefWidth="150.0" ripplerFill="#64b5f6" styleClass="verticleButtons" text="Others        " HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/media/Others.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <JFXTabPane focusTraversable="false" prefHeight="70.0" StackPane.alignment="TOP_LEFT">
+                     <tabs>
+                        <Tab fx:id="tabitemFile" onSelectionChanged="#viewTabitemFile" text="File">
+                           <content>
+                              <BorderPane>
+                                 <center>
+                                    <HBox BorderPane.alignment="CENTER">
+                                       <children>
+                                          <HBox>
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                             <children>
+                                                <JFXButton fx:id="logout" buttonType="RAISED" focusTraversable="false" onAction="#logout" prefHeight="40.0" prefWidth="70.0" ripplerFill="#64b5f6" style="-fx-background-color: white;" text="Log-out" />
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                 </center>
+                              </BorderPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="tabitemEdit" onSelectionChanged="#viewTabitemEdit" text="Edit-Themes">
+                           <content>
+                              <BorderPane>
+                                 <center>
+                                    <HBox BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXButton fx:id="theme1" buttonType="RAISED" focusTraversable="false" onAction="#ThemeSelect1" prefHeight="40.0" prefWidth="70.0" ripplerFill="#64b5f6" style="-fx-background-color: white;" text="Theme 1">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="theme2" buttonType="RAISED" focusTraversable="false" onAction="#ThemeSelect2" prefHeight="40.0" prefWidth="70.0" ripplerFill="#64b5f6" style="-fx-background-color: white;" text="Theme 2">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="theme3" buttonType="RAISED" focusTraversable="false" onAction="#ThemeSelect3" prefHeight="40.0" prefWidth="70.0" ripplerFill="#64b5f6" style="-fx-background-color: white;" text="Theme 3">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="theme4" buttonType="RAISED" focusTraversable="false" onAction="#ThemeSelect4" prefHeight="40.0" prefWidth="70.0" ripplerFill="#64b5f6" style="-fx-background-color: white;" text="Theme 4">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="theme5" buttonType="RAISED" focusTraversable="false" onAction="#ThemeSelect5" prefHeight="40.0" prefWidth="70.0" ripplerFill="#64b5f6" style="-fx-background-color: white;" text="Theme 5">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="theme6" buttonType="RAISED" focusTraversable="false" onAction="#ThemeSelect6" prefHeight="40.0" prefWidth="70.0" ripplerFill="#64b5f6" style="-fx-background-color: white;" text="Theme 6">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin></JFXButton>
+                                          <JFXButton fx:id="theme7" buttonType="RAISED" focusTraversable="false" onAction="#ThemeSelect7" prefHeight="40.0" prefWidth="70.0" ripplerFill="#64b5f6" style="-fx-background-color: white;" text="Theme 7">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin></JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </center>
+                              </BorderPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="tabSettings" onSelectionChanged="#viewTabitemSettings" text="Settings">
+                           <content>
+                              <BorderPane>
+                                 <center>
+                                    <HBox BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXButton fx:id="btnConfiguration" buttonType="RAISED" focusTraversable="false" onAction="#configurationAction" prefHeight="40.0" ripplerFill="#64b5f6" style="-fx-background-color: white;" text="Configuration">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                          <JFXButton fx:id="btnPrinter" buttonType="RAISED" focusTraversable="false" onAction="#printerAction" prefHeight="40.0" prefWidth="70.0" ripplerFill="#64b5f6" style="-fx-background-color: white;" text="Printer">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" right="5.0" top="3.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </center>
+                              </BorderPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+                  <HBox alignment="CENTER" maxHeight="30.0" maxWidth="120.0" prefHeight="30.0" prefWidth="120.0" StackPane.alignment="TOP_RIGHT">
+                     <children>
+                        <JFXButton fx:id="btnMinus" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#onMinus" prefHeight="15.0" ripplerFill="BLACK" styleClass="controllerButtons">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/minimize.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="3.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnSquare" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#onSquare" prefHeight="15.0" ripplerFill="BLACK" styleClass="controllerButtons">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/square.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="3.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnCross" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" onAction="#onCloss" prefHeight="15.0" ripplerFill="BLACK" styleClass="controllerButtons">
+                           <graphic>
+                              <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/cross.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="3.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

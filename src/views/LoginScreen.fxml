@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreenController">
+   <left>
+      <ImageView fitHeight="186.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+      	<image>
+            <Image url="media/logo.png" />
+      	</image>
+         <BorderPane.margin>
+            <Insets left="15.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </left>
+   <top>
+      <Pane fx:id="barColor" prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="193.0" layoutY="36.0" text="Welcome to SeaLock" wrapText="true">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="36.0" layoutY="78.0" text="Username">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUsername" focusColor="#64b5f6" layoutX="143.0" layoutY="63.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="36.0" layoutY="131.0" text="Password">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <JFXPasswordField fx:id="txtPassword" layoutX="143.0" layoutY="118.0" prefWidth="200.0" />
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" defaultButton="true" layoutX="143.0" layoutY="186.0" onAction="#loginAction" prefHeight="30.0" prefWidth="77.0" ripplerFill="BLACK" styleClass="nonRound" text="Login">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" buttonType="RAISED" cancelButton="true" layoutX="258.0" layoutY="186.0" onAction="#cancelAction" prefHeight="30.0" prefWidth="77.0" ripplerFill="BLACK" styleClass="nonRound" text="Cancel">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

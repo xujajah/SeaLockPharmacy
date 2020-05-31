@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThemeController">
+   <top>
+      <HBox fx:id="barColor" alignment="CENTER" prefHeight="65.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Select Theme">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane hbarPolicy="ALWAYS" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+         <content>
+            <HBox>
+               <children>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="theme1" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#ThemeAction" prefHeight="165.0" prefWidth="280.0" style="-fx-background-color: white;" text="Theme 1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="177.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="theme4" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#ThemeAction" prefHeight="165.0" prefWidth="280.0" style="-fx-background-color: white;" text="Theme 4">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="177.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/4.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="theme7" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#ThemeAction" prefHeight="165.0" prefWidth="280.0" style="-fx-background-color: white;" text="Theme 7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="177.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/7.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="theme2" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#ThemeAction" prefHeight="165.0" prefWidth="280.0" style="-fx-background-color: white;" text="Theme 2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="177.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="theme5" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#ThemeAction" prefHeight="165.0" prefWidth="280.0" style="-fx-background-color: white;" text="Theme 5">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="177.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/5.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="theme3" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#ThemeAction" prefHeight="165.0" prefWidth="280.0" style="-fx-background-color: white;" text="Theme 3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="177.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/3.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="theme6" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#ThemeAction" prefHeight="165.0" prefWidth="280.0" style="-fx-background-color: white;" text="Theme 6">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="177.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/media/6.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

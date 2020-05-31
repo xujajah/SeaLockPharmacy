@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootReport" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TabViewReportController">
+   <top>
+      <HBox fx:id="barColor" alignment="CENTER" prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Reports">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+  
+   <center>
+      <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          
+            <Tab closable="false" text="Frequent Order" >
+            <content>
+            		<fx:include fx:id="tabFrequentOrder" source="/views/TabFrequentOrder.fxml"/>
+            </content>
+            </Tab>
+            
+            
+            <Tab closable="false" text="Top Selling Drug" >
+              <content>
+            		<fx:include fx:id="tabTopSellingDrug" source="/views/TabTopSellingDrug.fxml"/>
+            </content>
+            </Tab>
+            
+            <Tab closable="false" text="Control Drug" >
+              <content>
+            		<fx:include fx:id="tabControlDrug" source="/views/TabControlDrug.fxml"/>
+            </content>
+            </Tab>
+            
+            
+            <Tab closable="false" text="Popular Medicine" >
+              <content>
+            		<fx:include fx:id="tabPopularMedicine" source="/views/TabPopularMedicine.fxml"/>
+            </content>
+            </Tab>
+             <Tab closable="false" text="Expiry" >
+              <content>
+            		<fx:include fx:id="expiryView" source="/views/ExpiryView.fxml"/>
+            </content>
+            </Tab>
+            <Tab closable="false" text="Revenue" >
+              <content>
+            		<fx:include fx:id="tabRevenue" source="/views/TabRevenue.fxml"/>
+            </content>
+            </Tab>
+            <Tab closable="false" text="Login History" >
+              <content>
+            		<fx:include fx:id="tabLoginHistory" source="/views/TabLoginHistory.fxml"/>
+            </content>
+            </Tab>
+          
+            <Tab closable="false" text="Daily Report" >
+              <content>
+            		<fx:include fx:id="tabDailyReport" source="/views/TabDailyReport.fxml"/>
+            </content>
+            </Tab>
+            <Tab closable="false" text="Weekly/Monthly" >
+              <content>
+            		<fx:include fx:id="tabWeeklyMonthlyReport" source="/views/TabWeeklyMonthlyReport.fxml"/>
+            </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+ 
+</BorderPane>

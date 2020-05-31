@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootSupplierReg" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierRegistrationController">
+   <top>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="barColor" alignment="CENTER" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" text="Supplier Registration" wrapText="true" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton fx:id="btnCross" contentDisplay="GRAPHIC_ONLY" onAction="#btnCrossAction" prefHeight="20.0" prefWidth="40.0" StackPane.alignment="TOP_RIGHT">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/media/cross.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </StackPane>
+   </top>
+   <center>
+      <GridPane alignment="CENTER" hgap="15.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="214.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="425.0" minWidth="10.0" prefWidth="386.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="BOTTOM_RIGHT" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="-2.0" left="70.0" />
+               </GridPane.margin>
+               <children>
+                  <Label alignment="BOTTOM_RIGHT" contentDisplay="CENTER" text="Name" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="-2.0" left="73.0" right="3.0" />
+               </GridPane.margin>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Phone" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefWidth="152.0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="-2.0" />
+               </GridPane.margin>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Email" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="-2.0" />
+               </GridPane.margin>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Website" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="-2.0" />
+               </GridPane.margin>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Address" />
+               </children>
+            </HBox>
+            <JFXTextField fx:id="txtSupplierName" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="286.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="5.0" right="55.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPhone" prefHeight="33.0" prefWidth="386.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="5.0" right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtEmail" alignment="TOP_LEFT" prefWidth="250.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="5.0" right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtwebsite" alignment="TOP_LEFT" prefWidth="250.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="5.0" right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAddress" alignment="TOP_LEFT" prefWidth="250.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="5.0" right="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton alignment="CENTER" buttonType="RAISED" defaultButton="true" onAction="#btnSaveAction" prefHeight="25.0" prefWidth="71.0" styleClass="nonRound" text="Save" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin></JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" cancelButton="true" onAction="#btnCancelAction" prefHeight="25.0" prefWidth="71.0" styleClass="nonRound" text="Cancel" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin></JFXButton>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

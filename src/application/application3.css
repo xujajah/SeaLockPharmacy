@@ -1,0 +1,228 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#barColor{
+	 -fx-text-fill: #FFFFFF;
+	-fx-background-color: black;
+	-fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-color-label-visible: #ffffff;
+}
+#barColor .label{
+	-fx-text-fill: white;
+}
+
+.verticleButtons .graphic{
+	-fx-background-color: red;
+}
+
+
+#mainBorder,#rootCustomerReg,#rootCustomerUpdate,#rootDoctorUpdate,#rootDoctorReg,#rootDrugUpdate,#rootDrugReg{
+    -fx-background-color: white;
+    -fx-border-width: 5;
+	-fx-border-color: black;		
+}
+
+#rootEmployeeUpdate,#BPSaleSearch,#rootEmployeeReg,#rootPrescriptionUpdate,#rootPrescriptionReg,#rootSupplierUpdate,#rootSupplierReg{
+	-fx-background-color: white;
+    -fx-border-width: 5;
+	-fx-border-color: black;	
+	
+}
+
+.verticleButtons{
+	
+	-fx-background-color:  white;
+	-fx-background-radius: 5;
+	
+}
+
+#mainBorder{
+    -fx-font-family: "Calibri";
+    -fx-font-size: 14;
+    -fx-background-radius: 10;
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 5;
+    -fx-border-radius: 10;
+}
+
+.jfx-tab-pane .headers-region
+{
+-fx-background-color: black;
+}
+.jfx-tab-pane .tab-header-background
+{
+-fx-background-color: black;
+}
+.jfx-tab-pane .tab-selected-line {
+	 -fx-stroke: #ffffff;
+ }
+ 
+#btnCross:hover{
+	-fx-background-color: #F5B0A1;
+	-fx-background-radius: 5;
+}
+
+#btnSquare:hover{
+	-fx-background-color: #b6d8f1;
+	-fx-background-radius: 5;
+}
+
+#btnMinus:hover{
+	-fx-background-color: #b6d8f1;
+	-fx-background-radius: 5;
+}
+
+#btnCross{
+	-fx-background-color: #F5B0A1;
+	-fx-background-radius: 5;
+}
+
+#btnSquare{
+	-fx-background-color: white;
+	-fx-background-radius: 5;
+}
+
+#btnMinus{
+	-fx-background-color: white;
+	-fx-background-radius: 5;
+}
+
+
+
+.verticleButtons:hover{
+   -fx-background-color: 
+        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(black 0%, black 20%, black 100%),
+        linear-gradient(#ffffff 0%, #ffffff 50%);
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );	
+}
+
+.nonRound{
+   	-fx-background-color: 
+        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(black 0%, black 20%, black 100%),
+        linear-gradient(#ffffff 0%, #ffffff 50%);
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.nonRound:hover{
+	-fx-background-color: 
+        linear-gradient(#ffffff, #ffffff),
+        linear-gradient(black 0%, black 20%, black 100%),
+        linear-gradient(#ffffff 0%, #ffffff 50%);
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+}
+
+
+.Round{
+
+	-fx-background-radius: 50;
+	-fx-border-color: black;
+	-fx-border-radius: 50;
+	-fx-border-width: 1;
+}
+
+.Round:hover{
+	-fx-background-color: #ffffff;
+}
+
+
+.table-cell {
+    -fx-alignment: CENTER-LEFT;	
+}
+#colSerial, #colID, #colDRSNo, #colOHorderid, #colPMproductId,#colPOPid {
+    -fx-alignment: CENTER;
+}
+
+#colQty, #colTotalAmount, #Total, #colPrice, #colTotalPrice{
+	-fx-alignment: CENTER-RIGHT
+}
+
+
+
+.nonRound{}
+
+
+.root{
+    -fx-font-family: "Calibri";
+    -fx-font-size: 14;
+    -fx-background-radius: 10;
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 5;
+}
+
+
+btnSales{
+	-fx-background-color: black;
+	-fx-background-fills: grey;
+}
+
+.scroll-bar:horizontal{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb{
+    -fx-background-color: black;
+    -fx-background-radius: 5em;
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: black;
+}
+
+
+
+.tab{
+    -fx-border-radius: 10 10 0 0;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+
+
+.tab:selected .focus-indicator {
+    -fx-border-radius: 11 11 0 0, 10 10 0 0;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: black;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #FFFFFF;
+}
